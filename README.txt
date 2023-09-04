@@ -13,14 +13,25 @@ delete the .git file.
    - Repository area - contains all the history of your previous version.Also contains all
     the version of your project.
 
---> git add <filename> - to move file from Working area to staging area.
+--> git add <filename> - to move file or changes from Working area to staging area.
 --> git rm --cached <filename> - to move file from to staging area to working area.
 --> git add .|| git add -A - fot all the file.
 
---> commit - particular version of your project.Take snapshot of files in staged area and
+--> commit - particular version of your project.Take snapshot of files in staging area and
              make version of a project out of it.
+--> git log - to see the list of all commit.
 
+Note - when any file is in the staging area and you make any changes in that file, then that changes will
+       reflect in working area
 
+--> git restore <filename> - remove all the changes from file which is in staging area but 
+                             not commited(remove changes from working area).
 
+--> Note - if any changes is made into a file(staging area) then that change first goes into
+    working area anf after git add it goes into staging area.  
 
+--> to remove changes from staging area - git restore --staged <filename>.  
+                                          this command will move changes from staging area
+                                          to working area and after that we can remove that changes
+                                          using git restore.                             
 
