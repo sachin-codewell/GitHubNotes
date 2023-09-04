@@ -35,3 +35,20 @@ Note - when any file is in the staging area and you make any changes in that fil
                                           to working area and after that we can remove that changes
                                           using git restore.                             
 
+--> diff between git rm and git restore - if you want to move whole file to untracked state then go for- git rm
+                                          otherwise if you want to move changes to stage area or working area the go for - git restore.
+
+--> git diff commit1id commit2id - will show all the changes between to commit.
+
+--> git remote  - show all the remote connection.
+
+--> Remote connection - helps to connect two repo to share the file and data.
+
+--> git remote add <remotename> <remote url> - to add the local repo to remote repo.
+
+--> git remote rm <remotename> - will delete the connection between two repo.
+
+--> git remote rename <oldname> <newname> - will rename the remote connection.
+
+--> git push <remote connection name> master  - to push the code from local repo to remote repo.
+    git push origin master
